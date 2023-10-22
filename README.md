@@ -9,3 +9,9 @@ npx cypress open
 
 # Run cypress tests
 npx cypress open or npx cypress run
+
+
+# other
+URL should be change the english too?
+Buy Tickets link is unnecessary.
+
