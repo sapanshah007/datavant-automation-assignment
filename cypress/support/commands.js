@@ -7,3 +7,13 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
+
+import BuyTicketsSearchUIElements from "../ui/buyTicketsSearchUIElements"
+
+Cypress.Commands.add('openHomePageUrl', () => {
+    cy.visit('/')
+})
+
+Cypress.Commands.add('openBuyTicketsPageUrl', () => {
+    cy.visit(BuyTicketsSearchUIElements.relativeUrl)
+})
