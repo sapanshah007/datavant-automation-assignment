@@ -1,0 +1,17 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - npm install
+  build:
+    commands:
+      - npx cypress run --headless --browser chrome # Adjust the browser as needed
+  post_build:
+    commands:
+      - npx cypress run --record --key YOUR_CYPRESS_RECORD_KEY # Optional: Record test results
+artifacts:
+  files:
+    - '/*'
+  discard-paths: yes
